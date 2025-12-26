@@ -1,0 +1,101 @@
+01blog/
+├── README.md
+├── pom.xml
+├── docker-compose.yml          # DB + optional services
+├── .gitignore
+│
+└── src/
+    └── main/
+       └── java/
+            └── com/
+                └── madagha/
+                    └── backend/
+                        ├── backendApplication.java
+                        │
+                        ├── config/
+                        │   ├── SecurityConfig.java
+                        │   ├── WebConfig.java
+                        │   └── OpenApiConfig.java  # optional
+                        │
+                        ├── common/
+                        │   ├── dto/
+                        │   ├── exception/
+                        │   │   ├── GlobalExceptionHandler.java
+                        │   │   └── ApiError.java
+                        │   ├── mapper/
+                        │   └── response/
+         
+                        ├── auth/
+                        │   ├── controller/
+                        │   │   └── AuthController.java
+                        │   ├── service/
+                        │   │   ├── AuthService.java
+                        │   │   └── JwtService.java
+                        │   ├── dto/
+                        │   │   ├── LoginRequest.java
+                        │   │   ├── RegisterRequest.java
+                        │   │   └── AuthResponse.java
+                        │   └── filter/
+                        │       └── JwtAuthenticationFilter.java
+         
+                        ├── user/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   ├── entity/
+                        │   │   └── User.java
+                        │   └── dto/
+         
+                        ├── post/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   ├── entity/
+                        │   │   └── Post.java
+                        │   └── dto/
+         
+                        ├── comment/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   ├── entity/
+                        │   │   └── Comment.java
+                        │   └── dto/
+         
+                        ├── like/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   └── entity/
+                        │       └── Like.java
+         
+                        ├── subscription/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   └── entity/
+                        │       └── Subscription.java
+         
+                        ├── notification/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   ├── entity/
+                        │   │   └── Notification.java
+                        │   └── dto/
+         
+                        ├── report/
+                        │   ├── controller/
+                        │   ├── service/
+                        │   ├── repository/
+                        │   ├── entity/
+                        │   │   └── Report.java
+                        │   └── dto/
+         
+                        ├── admin/
+                        │   ├── controller/
+                        │   └── service/
+         
+                        └── media/
+                            ├── controller/
+                            ├── service/
+                            └── storage/
